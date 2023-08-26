@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de Maquetación</h1>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Admistrador</a></li>
+            <li><a href="#">Especialista Medico</a></li>
+            <li><a href="#">Paciente</a></li>
+        </ul>
+    </header>
+    <div>
+        <main>
+            <form action="">
+                <h3>Agregar Especialista Medico</h3>
+                <div class="container-agregarEspecialista">
+                    <section>
+                        <input type="text" placeholder="Nombre del Especialista Medico">
+                    </section>
+                    <div>
+                        <input type="text" placeholder="Cedula">
+                    </div>
+                    <section>
+                        <input type="text" placeholder="Especialidad">
+                    </section>
+                    <div>
+                        <input type="number" placeholder="Salario del Medico">
+                    </div>
+                    <section>
+                        <label for="fecha-ingreso">Fecha de ingreso</label>
+                        <input type="date" id="fecha-ingreso">
+                    </section>
+                </div>
+                <button>Agregar</button>
+            </form>
+            <div class="container-mostrarEspecialistas">
+                <h3>Datos del Formulario</h3>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cedula</th>
+                        <th>Especialidad</th>
+                        <th>Salario</th>
+                        <th>Fecha ingreso</th>
+
+                    </tr>
+                    <tr>
+                        <td id="nombre"></td>
+                        <td id="cedula"></td>
+                        <td id="especialidad"></td>
+                        <td id="salario"></td>
+                        <td id="fecha-ingreso"></td>
+                    </tr>
+            </div>
+            <section class="container-buscarEspecialista">
+                <form>
+                    <label for="nombre">Buscar por Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <button type="button" onclick="buscarUsuario()">Buscar</button>
+                </form>
+                <ul id="listaUsuarios">
+                    <!-- Resultados de la busqueda -->
+                </ul>
+            </section>
+            <div class="container-eliminarEspecialista">
+                <h3>Eliminar Usuario</h3>
+                <ul id="listaUsuarios">
+                    <!-- Los usuarios se mostrarán aquí -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
